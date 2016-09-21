@@ -14,8 +14,8 @@ server.on('connection', function (sock){
 
 	sock.setEncoding('utf8');
 
-	sock.on('data', function(data){
-		broadcast(data);
+	sock.on('data', function (data){
+		broadcast(data, sock);
 	});
 
 	sock.on('end', function (){
@@ -26,7 +26,7 @@ server.on('connection', function (sock){
 		console.log('Socket cerrado: ' + sock.remoteAddress + ' ' + sock.remotePort);
 	});
 
-	function broadcast(data) {
+	function broadcast(data, sock) {
 		for (var user in users){
 			if (users[user] != sock){
 				console.log("El cliente " + sock.remoteAddress + " envia el mensaje: " + data);
