@@ -1,0 +1,29 @@
+{
+  "name": "ejercicios",
+  "version": "1.0.0",
+  "description": "Modulos para ejercicios",
+  "main": "server.js",
+  "dependencies": {
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroLuque/nodeEjercicios.git"
+  },
+  "keywords": [
+    "eip",
+    "nodejs",
+    "ejercicios"
+  ],
+  "author": "Leandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeandroLuque/nodeEjercicios/issues"
+  },
+  "homepage": "https://github.com/LeandroLuque/nodeEjercicios#readme"
+}
