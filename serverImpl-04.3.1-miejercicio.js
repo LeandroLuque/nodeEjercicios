@@ -27,12 +27,11 @@ server.on('connection', function (sock){
 	});
 
 	function broadcast(data, sock) {
-		for (var user in users){
-			if (users[user] != sock){
-				console.log("El cliente " + sock.remoteAddress + " envia el mensaje: " + data);
-				users[user].write(data);
-			}
-		}
+		
+		users.forEach(function (user){
+			if (user === sock) return;
+      		user.write(data);
+		});
 	};
 
 });
