@@ -27,7 +27,6 @@ server.on('connection', function (sock){
 	});
 
 	function broadcast(data, sock) {
-		
 		users.forEach(function (user){
 			if (user === sock) return;
       		user.write(data);

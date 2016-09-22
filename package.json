@@ -4,6 +4,7 @@
   "description": "Modulos para ejercicios",
   "main": "server.js",
   "dependencies": {
+    "restify": "^4.1.1",
     "through2": "^2.0.1"
   },
   "devDependencies": {},
